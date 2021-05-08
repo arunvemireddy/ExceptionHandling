@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
 	public String saveUser(User user) {
 		
 		user.setName(user.getName());
-		
+		user.setEmail(user.getEmail());
 		userRepository.save(user);
 		return "Details Saved";
 	
